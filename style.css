@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+body {
+  margin: 0;
+  padding: 1.5rem 0.5rem;
+  box-sizing: border-box;
+  background-color: rgb(52, 34, 68);
+  font-size: 1.5rem;
+  height: inherit;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+main {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+input {
+  margin: 0;
+}
+.filter-container {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  align-items: center;
+  gap: 1rem;
+}
+input[type="text"] {
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem;
+}
+input[type="radio"] {
+  height: 1rem;
+  width: 1rem;
+}
+.pages-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.pages-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  font-size: 1.2rem;
+  background-color: rgb(135, 255, 255);
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  width: 240px;
+  gap: 0.4rem;
+  margin: 1rem 0;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+.card img {
+  width: 150px;
+  height: 150px;
+}
+.card h5 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.card span {
+  font-size: 1rem;
+  line-height: 1.1;
+}
