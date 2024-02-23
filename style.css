@@ -33,7 +33,9 @@ input {
   justify-content: center;
   font-weight: 300;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 0.2rem;
 }
 input[type="text"] {
   border-radius: 1rem;
@@ -106,4 +108,13 @@ input[type="radio"] {
 .card span {
   font-size: 1rem;
   line-height: 1.1;
+}
+.input-box-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+.filters-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }

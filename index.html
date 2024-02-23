@@ -14,14 +14,18 @@
   <body>
     <main>
       <div class="filter-container">
-        <span>Filters:</span>
-        <input id="name-filter" type="text" placeholder="Search by name" />
-        <input id="alive-radio" type="radio" name="filter-status" />
-        <label>Alive</label>
-        <input id="dead-radio" type="radio" name="filter-status" />
-        <label>Dead</label>
-        <input id="unknown-radio" type="radio" name="filter-status" />
-        <label>Unknown</label>
+        <div class="input-box-wrapper">
+          <span>Filters:</span>
+          <input id="name-filter" type="text" placeholder="Search by name" />
+        </div>
+        <div class="filters-wrapper">
+          <input id="alive-radio" type="radio" name="filter-status" />
+          <label>Alive</label>
+          <input id="dead-radio" type="radio" name="filter-status" />
+          <label>Dead</label>
+          <input id="unknown-radio" type="radio" name="filter-status" />
+          <label>Unknown</label>
+        </div>
       </div>
       <div class="cards-container"></div>
       <div class="pages-container">
