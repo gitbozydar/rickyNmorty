@@ -57,7 +57,7 @@ nameFilterInput.addEventListener("input", () => {
   displayCharacters(filteredCharacters);
 });
 
-function displayCharacters(characters) {
+const displayCharacters = (characters) => {
   cardsContainer.innerHTML = "";
   characters.forEach((character) => {
     createCard(
@@ -67,14 +67,14 @@ function displayCharacters(characters) {
       character.species
     );
   });
-}
+};
 
-function getSelectedFilter() {
+const getSelectedFilter = () => {
   if (aliveFilter.checked) return "status=alive";
   if (deadFilter.checked) return "status=dead";
   if (unknownFilter.checked) return "status=unknown";
   return "";
-}
+};
 
 const createCard = (img, name, status, origin) => {
   const card = document.createElement("div");
